@@ -1,0 +1,86 @@
+`include "axis_fifo_my.v"
+`default_nettype none
+
+module tb_axis_fifo_my;
+
+parameter integer C_S_AXIS_TDATA_WIDTH	= 32;
+
+reg clk;
+reg rst_n;
+
+reg read_ready;
+reg S_AXIS_TVALID;
+
+reg [C_S_AXIS_TDATA_WIDTH-1:0] data_in;
+
+wire [C_S_AXIS_TDATA_WIDTH-1:0] data_out;
+wire S_AXIS_TREADY;
+wire fifo_full;
+wire fifo_empty;
+
+axis_fifo_my #(.C_S_AXIS_TDATA_WIDTH(C_S_AXIS_TDATA_WIDTH)) u1 
+(
+    .data_out(data_out),
+    .read_ready(read_ready),
+
+    .fifo_full(fifo_full),
+    .fifo_empty(fifo_empty),
+    // User ports ends
+    // Do not modify the ports beyond this line
+
+    // AXI4Stream sink: Clock
+    .S_AXIS_ACLK(clk),
+    // AXI4Stream sink: Reset
+    .S_AXIS_ARESETN(rst_n),
+    // Ready to accept data in
+    .S_AXIS_TREADY(S_AXIS_TREADY),
+    // Data in
+    .S_AXIS_TDATA(data_in),
+    // Byte qualifier
+    .S_AXIS_TSTRB(4'd0),
+    // Indicates boundary of last packet
+    .S_AXIS_TLAST(1'd0),
+    // Data is in valid
+    .S_AXIS_TVALID(S_AXIS_TVALID)
+);
+
+localparam CLK_PERIOD = 10;
+always #(CLK_PERIOD) clk=~clk;
+
+initial begin
+    $fsdbDumpfile("tb_wave_2.fsdb");
+	$fsdbDumpvars(0);
+    $fsdbDumpvars(u1.fifo[0]);
+    $fsdbDumpvars(u1.fifo[1]);
+    $fsdbDumpvars(u1.fifo[2]);
+    $fsdbDumpvars(u1.fifo[3]);
+end
+
+initial begin
+    rst_n=1'd1;
+    clk=1'd0;
+    read_ready=1'd0;
+    S_AXIS_TVALID=1'd0;  
+    data_in=32'd0;
+
+    #10 rst_n=1'd0;
+    #30 rst_n=1'd1;
+
+    #20
+    S_AXIS_TVALID=1'd1;  
+    data_in=32'd1;
+    #20
+    data_in=32'd2;
+    #20
+    data_in=32'd3;
+    #20
+    data_in=32'd4;
+    #1000
+    S_AXIS_TVALID=1'd0;
+    read_ready=1'd1;
+    #10000000;
+    $finish;
+end
+
+endmodule
+`default_nettype wire

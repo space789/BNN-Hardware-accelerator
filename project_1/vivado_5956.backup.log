@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Aug 15 18:40:16 2023
+# Process ID: 5956
+# Current directory: D:/vivado/university_project-master/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3800 D:\vivado\university_project-master\project_1\project_1.xpr
+# Log file: D:/vivado/university_project-master/project_1/vivado.log
+# Journal file: D:/vivado/university_project-master/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/university_project-master/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.156 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 15 18:40:50 2023...
+.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:module_ref:ALU:1.0 - ALU_0
+Adding component instance block -- xilinx.com:module_ref:AXI_interface:1.0 - AXI_interface_0
+Successfully read diagram <design_1> from block design file <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1015.461 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+update_module_reference design_1_ALU_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_ALU_0_0 from ALU_v1_0 1.0 to ALU_v1_0 1.0
+Wrote  : <D:\vivado\university_project-master\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference design_1_AXI_interface_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_AXI_interface_0_0 from AXI_interface_v1_0 1.0 to AXI_interface_v1_0 1.0
+WARNING: [IP_Flow 19-4706] Upgraded port 'S_AXI_ARADDR' width 5 differs from original width 4
+WARNING: [IP_Flow 19-4706] Upgraded port 'S_AXI_AWADDR' width 5 differs from original width 4
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'reg4_write_data'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'write_bias_finish'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_AXI_interface_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_AXI_interface_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <D:\vivado\university_project-master\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 15 18:43:25 2023...

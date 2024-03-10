@@ -1,0 +1,16 @@
+//function
+1
+//ifmaps_width
+16
+//ifmaps_hight
+16
+//ifmaps_channel
+8
+//weight_width
+2
+//weight_hight
+2
+//weight_num
+8
+//stride
+2

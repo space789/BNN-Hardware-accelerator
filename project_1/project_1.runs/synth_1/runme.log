@@ -1,0 +1,162 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34544
+WARNING: [Synth 8-2507] parameter declaration becomes local in axis_preload_fifo with formal parameter declaration list [D:/vivado/university_project-master/axis_preload_fifo.v:42]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.613 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado/university_project-master/top.v:1]
+	Parameter MAC_NUM bound to: 256 - type: integer 
+	Parameter WEITGHT_BRAM_ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter BIAS_BRAM_ADDRESS_WIDTH bound to: 9 - type: integer 
+	Parameter BIAS_BRAM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXIS_PRELOAD_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter AXIS_FIFO_SIZE bound to: 16 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter M_AXIS_FIFO_DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXI_interface' [D:/vivado/university_project-master/AXI_interface.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/vivado/university_project-master/AXI_interface.v:445]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_interface' (1#1) [D:/vivado/university_project-master/AXI_interface.v:4]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [D:/vivado/university_project-master/control_unit.v:5]
+	Parameter MAC_NUM bound to: 256 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter LOAD_WEIGHT_IDLE bound to: 5'b00000 
+	Parameter RESET_ADDR bound to: 5'b00001 
+	Parameter K1_0 bound to: 5'b00010 
+	Parameter K2_0 bound to: 5'b00011 
+	Parameter K2_1 bound to: 5'b00100 
+	Parameter K3_0 bound to: 5'b00101 
+	Parameter K3_1 bound to: 5'b00110 
+	Parameter K3_2 bound to: 5'b00111 
+	Parameter K4_0 bound to: 5'b01000 
+	Parameter K4_1 bound to: 5'b01001 
+	Parameter K4_2 bound to: 5'b01010 
+	Parameter K4_3 bound to: 5'b01011 
+	Parameter K5_0 bound to: 5'b01100 
+	Parameter K5_1 bound to: 5'b01101 
+	Parameter K5_2 bound to: 5'b01110 
+	Parameter K5_3 bound to: 5'b01111 
+	Parameter K5_4 bound to: 5'b10000 
+	Parameter K1_LOAD_WEIGHT bound to: 5'b10001 
+	Parameter K2_LOAD_WEIGHT bound to: 5'b10010 
+	Parameter K3_LOAD_WEIGHT bound to: 5'b10011 
+	Parameter K4_LOAD_WEIGHT bound to: 5'b10100 
+	Parameter K5_LOAD_WEIGHT bound to: 5'b10101 
+	Parameter LOAD_IFMAPS_IDLE bound to: 5'b00000 
+	Parameter WAIT_FIFO1 bound to: 5'b00001 
+	Parameter LOAD1 bound to: 5'b00010 
+	Parameter WAIT_FIFO2 bound to: 5'b00011 
+	Parameter LOAD2 bound to: 5'b00100 
+	Parameter WAIT_FIFO3 bound to: 5'b00101 
+	Parameter LOAD3 bound to: 5'b00110 
+	Parameter WAIT_FIFO4 bound to: 5'b00111 
+	Parameter LOAD4 bound to: 5'b01000 
+	Parameter WAIT_FIFO5 bound to: 5'b01001 
+	Parameter LOAD5 bound to: 5'b01010 
+	Parameter COMPUTE bound to: 5'b01011 
+	Parameter WAIT_FIFO6 bound to: 5'b01100 
+	Parameter LOAD bound to: 5'b01101 
+	Parameter LB_IDLE bound to: 3'b000 
+	Parameter LB_RESET_ADDR bound to: 3'b001 
+	Parameter LB_WAIT bound to: 3'b010 
+	Parameter LB_ADD bound to: 3'b011 
+	Parameter WW_IDLE bound to: 3'b000 
+	Parameter WW_START bound to: 3'b001 
+	Parameter WW_WAIT bound to: 3'b010 
+	Parameter WW_FINISH bound to: 3'b011 
+	Parameter WB_IDLE bound to: 3'b000 
+	Parameter WB_START bound to: 3'b001 
+	Parameter WB_WAIT bound to: 3'b010 
+	Parameter WB_FINISH bound to: 3'b011 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/university_project-master/control_unit.v:433]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (2#1) [D:/vivado/university_project-master/control_unit.v:5]
+INFO: [Synth 8-6157] synthesizing module 'data_path' [D:/vivado/university_project-master/data_path.v:4]
+	Parameter MAC_NUM bound to: 256 - type: integer 
+	Parameter WEITGHT_BRAM_ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter BIAS_BRAM_ADDRESS_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXIS_PRELOAD_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter AXIS_FIFO_SIZE bound to: 16 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter BIAS_BRAM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AXIS_PRELOAD_BIT_NUM bound to: 2 - type: integer 
+	Parameter AXIS_BIT_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_fifo_my' [D:/vivado/university_project-master/axis_fifo_my.v:4]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter FIFO_SIZE bound to: 16 - type: integer 
+	Parameter bit_num bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_fifo_my' (3#1) [D:/vivado/university_project-master/axis_fifo_my.v:4]
+INFO: [Synth 8-6157] synthesizing module 'axis_preload_fifo' [D:/vivado/university_project-master/axis_preload_fifo.v:1]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter MAC_NUM bound to: 256 - type: integer 
+	Parameter AXIS_PRELOAD_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter bit_num bound to: 2 - type: integer 
+	Parameter LOAD_HEIGHT_0 bound to: 4'b0001 
+	Parameter LOAD_HEIGHT_1 bound to: 4'b0010 
+	Parameter LOAD_HEIGHT_2 bound to: 4'b0011 
+	Parameter LOAD_HEIGHT_3 bound to: 4'b0100 
+	Parameter LOAD_HEIGHT_4 bound to: 4'b0101 
+INFO: [Synth 8-6155] done synthesizing module 'axis_preload_fifo' (4#1) [D:/vivado/university_project-master/axis_preload_fifo.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAC_array_control' [D:/vivado/university_project-master/MAC_array_control.v:4]
+	Parameter MAC_NUM bound to: 256 - type: integer 
+	Parameter BRAM_ADDRESS_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'weight_preload' [D:/vivado/university_project-master/weight_preload.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'weight_preload' (5#1) [D:/vivado/university_project-master/weight_preload.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MAC_array' [D:/vivado/university_project-master/MAC_array.v:1]
+	Parameter MAC_NUM bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/university_project-master/ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [D:/vivado/university_project-master/ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MAC_array' (7#1) [D:/vivado/university_project-master/MAC_array.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MAC_array_control' (8#1) [D:/vivado/university_project-master/MAC_array_control.v:4]
+INFO: [Synth 8-6157] synthesizing module 'psum_adder' [D:/vivado/university_project-master/psum_adder.v:2]
+	Parameter PSUM_IN_WIDTH bound to: 1536 - type: integer 
+	Parameter OFMAPS_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'psum_adder' (9#1) [D:/vivado/university_project-master/psum_adder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'psum_out_data_package' [D:/vivado/university_project-master/psum_out_data_package.v:4]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'psum_out_data_package' (10#1) [D:/vivado/university_project-master/psum_out_data_package.v:4]
+WARNING: [Synth 8-689] width (12) of port connection 'output_channel_size' does not match port width (9) of module 'psum_out_data_package' [D:/vivado/university_project-master/data_path.v:257]
+INFO: [Synth 8-6157] synthesizing module 'pool_out_data_package' [D:/vivado/university_project-master/pool_out_data_package.v:4]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter OUT bound to: 2'b01 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/university_project-master/pool_out_data_package.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'pool_out_data_package' (11#1) [D:/vivado/university_project-master/pool_out_data_package.v:4]
+ERROR: [Synth 8-439] module 'weight_bram_control' not found [D:/vivado/university_project-master/data_path.v:305]
+	Parameter MAC_NUM bound to: 256 - type: integer 
+	Parameter BRAM_ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter AXIS_PRELOAD_FIFO_DEPTH bound to: 4 - type: integer 
+ERROR: [Synth 8-6156] failed synthesizing module 'data_path' [D:/vivado/university_project-master/data_path.v:4]
+ERROR: [Synth 8-6156] failed synthesizing module 'top' [D:/vivado/university_project-master/top.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1015.613 ; gain = 0.000
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 2 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 30 17:32:55 2023...

@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Aug 30 16:54:38 2023
+# Process ID: 83696
+# Current directory: D:/vivado/university_project-master/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent81528 D:\vivado\university_project-master\project_1\project_1.xpr
+# Log file: D:/vivado/university_project-master/project_1/vivado.log
+# Journal file: D:/vivado/university_project-master/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/university_project-master/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.266 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:module_ref:ALU:1.0 - ALU_0
+Adding component instance block -- xilinx.com:module_ref:AXI_interface:1.0 - AXI_interface_0
+Successfully read diagram <design_1> from block design file <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.266 ; gain = 0.000
+close_bd_design [get_bd_designs design_1]
+Wrote  : <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name weight_BRAM
+set_property -dict [list CONFIG.Component_Name {weight_BRAM} CONFIG.Interface_Type {Native} CONFIG.Use_AXI_ID {false} CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {1280} CONFIG.Write_Depth_A {3072} CONFIG.Read_Width_A {1280} CONFIG.Operating_Mode_A {WRITE_FIRST} CONFIG.Write_Width_B {1280} CONFIG.Read_Width_B {1280} CONFIG.Operating_Mode_B {WRITE_FIRST} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Load_Init_File {false} CONFIG.Use_RSTB_Pin {false} CONFIG.Reset_Type {SYNC} CONFIG.Additional_Inputs_for_Power_Estimation {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.EN_SAFETY_CKT {false}] [get_ips weight_BRAM]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'weight_BRAM' to 'weight_BRAM' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files d:/vivado/university_project-master/project_1/project_1.srcs/sources_1/ip/weight_BRAM/weight_BRAM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'weight_BRAM'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/vivado/university_project-master/project_1/project_1.srcs/sources_1/ip/weight_BRAM/weight_BRAM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_BRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_BRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'weight_BRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'weight_BRAM'...
+catch { config_ip_cache -export [get_ips -all weight_BRAM] }
+export_ip_user_files -of_objects [get_files d:/vivado/university_project-master/project_1/project_1.srcs/sources_1/ip/weight_BRAM/weight_BRAM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/vivado/university_project-master/project_1/project_1.srcs/sources_1/ip/weight_BRAM/weight_BRAM.xci]
+launch_runs weight_BRAM_synth_1 -jobs 4
+[Wed Aug 30 17:19:49 2023] Launched weight_BRAM_synth_1...
+Run output will be captured here: D:/vivado/university_project-master/project_1/project_1.runs/weight_BRAM_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1117.211 ; gain = 0.000
+export_simulation -of_objects [get_files d:/vivado/university_project-master/project_1/project_1.srcs/sources_1/ip/weight_BRAM/weight_BRAM.xci] -directory D:/vivado/university_project-master/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/vivado/university_project-master/project_1/project_1.ip_user_files -ipstatic_source_dir D:/vivado/university_project-master/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivado/university_project-master/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/vivado/university_project-master/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/vivado/university_project-master/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/vivado/university_project-master/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+open_bd_design {D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:module_ref:ALU:1.0 - ALU_0
+Adding component instance block -- xilinx.com:module_ref:AXI_interface:1.0 - AXI_interface_0
+Successfully read diagram <design_1> from block design file <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+delete_bd_objs [get_bd_cells AXI_interface_0]
+delete_bd_objs [get_bd_cells ALU_0]
+set_property synth_checkpoint_mode Singular [get_files  D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <D:\vivado\university_project-master\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : d:/vivado/university_project-master/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : d:/vivado/university_project-master/project_1/project_1.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : d:/vivado/university_project-master/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file d:/vivado/university_project-master/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file d:/vivado/university_project-master/project_1/project_1.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File d:/vivado/university_project-master/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_synth_1 -jobs 4
+[Wed Aug 30 17:25:57 2023] Launched design_1_synth_1...
+Run output will be captured here: D:/vivado/university_project-master/project_1/project_1.runs/design_1_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1310.230 ; gain = 6.672
+export_simulation -of_objects [get_files D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/vivado/university_project-master/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir D:/vivado/university_project-master/project_1/project_1.ip_user_files -ipstatic_source_dir D:/vivado/university_project-master/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivado/university_project-master/project_1/project_1.cache/compile_simlib/modelsim} {questa=D:/vivado/university_project-master/project_1/project_1.cache/compile_simlib/questa} {riviera=D:/vivado/university_project-master/project_1/project_1.cache/compile_simlib/riviera} {activehdl=D:/vivado/university_project-master/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+export_ip_user_files -of_objects  [get_files D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  -fileset design_1 D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
+INFO: [Project 1-386] Moving file 'D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd' from fileset 'design_1' to fileset 'sources_1'.
+create_bd_design "design_1"
+Wrote  : <D:\vivado\university_project-master\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files d:/vivado/university_project-master/project_1/project_1.srcs/sources_1/ip/weight_BRAM/weight_BRAM.xci] -no_script -reset -force -quiet
+remove_files  -fileset weight_BRAM d:/vivado/university_project-master/project_1/project_1.srcs/sources_1/ip/weight_BRAM/weight_BRAM.xci
+INFO: [Project 1-386] Moving file 'd:/vivado/university_project-master/project_1/project_1.srcs/sources_1/ip/weight_BRAM/weight_BRAM.xci' from fileset 'weight_BRAM' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  D:/vivado/university_project-master/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
+set_property top top [current_fileset]
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Wed Aug 30 17:32:56 2023] Launched synth_1...
+Run output will be captured here: D:/vivado/university_project-master/project_1/project_1.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1341.434 ; gain = 0.000
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 30 17:35:48 2023...

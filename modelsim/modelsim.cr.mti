@@ -1,0 +1,155 @@
+D:/vivado/university_project-master/MAC_array_control.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/MAC_array_control.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module MAC_array_control
+
+Top level modules:
+	MAC_array_control
+
+} {} {}} D:/vivado/university_project-master/tb_top.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/tb_top.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+
+} {} {}} D:/vivado/university_project-master/axis_master.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/axis_master.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module axis_master
+
+Top level modules:
+	axis_master
+
+} {} {}} D:/vivado/university_project-master/control_unit.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/control_unit.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module control_unit
+
+Top level modules:
+	control_unit
+
+} {} {}} D:/vivado/university_project-master/tb_psum_adder.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/tb_psum_adder.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module tb_psum_adder
+
+Top level modules:
+	tb_psum_adder
+
+} {} {}} D:/vivado/university_project-master/tb_axis_out.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/tb_axis_out.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module tb_axis_out
+
+Top level modules:
+	tb_axis_out
+
+} {} {}} D:/vivado/university_project-master/tb_auto_read.v {2 {vlog -work work -stats=none D:/vivado/university_project-master/tb_auto_read.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module tb_auto_read
+** Warning: D:/vivado/university_project-master/tb_auto_read.v(153): (vlog-2182) 'ofmaps_validation_cnt' might be read before written in always_comb or always @* block.
+
+** Warning: D:/vivado/university_project-master/tb_auto_read.v(175): (vlog-2182) 'psum_validation_cnt' might be read before written in always_comb or always @* block.
+
+
+Top level modules:
+	tb_auto_read
+
+} {} {}} D:/vivado/university_project-master/ALU.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/ALU.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/vivado/university_project-master/tb_conv_pool.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/tb_conv_pool.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module tb_conv_pool
+
+Top level modules:
+	tb_conv_pool
+
+} {} {}} D:/vivado/university_project-master/psum_adder.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/psum_adder.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module psum_adder
+
+Top level modules:
+	psum_adder
+
+} {} {}} D:/vivado/university_project-master/PSUM_Output.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/PSUM_Output.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+
+} {} {}} D:/vivado/university_project-master/axis_fifo_my.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/axis_fifo_my.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module axis_fifo_my
+
+Top level modules:
+	axis_fifo_my
+
+} {} {}} D:/vivado/university_project-master/pool_out_data_package.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/pool_out_data_package.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module pool_out_data_package
+
+Top level modules:
+	pool_out_data_package
+
+} {} {}} D:/vivado/university_project-master/data_path.v {1 {vlog -work work -stats=none {D:\vivado\university_project-master\data_path.v}
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module data_path
+
+Top level modules:
+	data_path
+
+} {} {}} D:/vivado/university_project-master/weight_preload.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/weight_preload.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module weight_preload
+
+Top level modules:
+	weight_preload
+
+} {} {}} D:/vivado/university_project-master/axis_preload_fifo.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/axis_preload_fifo.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module axis_preload_fifo
+
+Top level modules:
+	axis_preload_fifo
+
+} {} {}} D:/vivado/university_project-master/tb_top_pooling.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/tb_top_pooling.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module tb_top_pooling
+
+Top level modules:
+	tb_top_pooling
+
+} {} {}} D:/vivado/university_project-master/MAC_array.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/MAC_array.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module MAC_array
+
+Top level modules:
+	MAC_array
+
+} {} {}} D:/vivado/university_project-master/psum_out_data_package.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/psum_out_data_package.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module psum_out_data_package
+
+Top level modules:
+	psum_out_data_package
+
+} {} {}} D:/vivado/university_project-master/AXI_interface.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/AXI_interface.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module AXI_interface
+
+Top level modules:
+	AXI_interface
+
+} {} {}} D:/vivado/university_project-master/bram_control.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/bram_control.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module bram_control
+
+Top level modules:
+	bram_control
+
+} {} {}} D:/vivado/university_project-master/top.v {1 {vlog -work work -stats=none D:/vivado/university_project-master/top.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}}

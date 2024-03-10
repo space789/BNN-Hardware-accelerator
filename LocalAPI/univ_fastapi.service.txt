@@ -1,0 +1,23 @@
+[Unit]
+Description=University Project
+After=network.target
+
+[Service]
+User=root
+#Group=sudoers
+WorkingDirectory=/home/xilinx/FastAPI
+#ExecStart=/home/xilinx/FastAPI/testenv/bin/gunicorn -c gunicorn_conf.py main:app
+#ExecStart=/home/xilinx/FastAPI/testenv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
+ExecStart=/bin/bash -c 'source /etc/profile.d/pynq_venv.sh && \
+export XILINX_XRT=/usr && \
+uvicorn main:app --host 0.0.0.0 --port 8000'
+#ExecStart=/home/xilinx/FastAPI/testenv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
+
+Restart=on-failure
+RestartSec=10
+
+StandardOutput=append:/home/xilinx/FastAPI/access_log
+StandardError=append:/home/xilinx/FastAPI/error_log
+
+[Install]
+WantedBy=multi-user.target

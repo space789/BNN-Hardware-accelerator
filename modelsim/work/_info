@@ -1,0 +1,434 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/verilog_context/2023/2023_univ_cell/modelsim
+vALU
+Z0 !s110 1682745555
+!i10b 1
+!s100 dNPIMm^k9g2S48BGB^8[T2
+IUTmcI]SP7;LP?3oWMG=OH3
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dD:/vivado/university_project-master/modelsim
+Z3 w1682602090
+8D:/vivado/university_project-master/ALU.v
+FD:/vivado/university_project-master/ALU.v
+L0 1
+Z4 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1682745555.133000
+!s107 D:/vivado/university_project-master/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/ALU.v|
+!i113 1
+Z5 o-work work
+n@a@l@u
+vAXI_interface
+R0
+!i10b 1
+!s100 WH@D7?8V_nM[ULHCkiWIh2
+IO3>EOeeSD?nj7D^8@XUH52
+R1
+R2
+R3
+8D:/vivado/university_project-master/AXI_interface.v
+FD:/vivado/university_project-master/AXI_interface.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1682745555.263000
+!s107 D:/vivado/university_project-master/AXI_interface.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/AXI_interface.v|
+!i113 1
+R5
+n@a@x@i_interface
+vaxis_fifo_my
+R0
+!i10b 1
+!s100 <6`M<Dz]HJ@=ee8T[M<j[1
+IEh=1ziS2]D?h<:dPU^:Oo2
+R1
+R2
+R3
+8D:/vivado/university_project-master/axis_fifo_my.v
+FD:/vivado/university_project-master/axis_fifo_my.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1682745555.394000
+!s107 D:/vivado/university_project-master/axis_fifo_my.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/axis_fifo_my.v|
+!i113 1
+R5
+vaxis_master
+R0
+!i10b 1
+!s100 f2IR8]K`VTTU<DRR<ZVl;1
+I?]0[i3Y@Pj`9U7MFIdiS31
+R1
+R2
+R3
+8D:/vivado/university_project-master/axis_master.v
+FD:/vivado/university_project-master/axis_master.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1682745555.530000
+!s107 D:/vivado/university_project-master/axis_master.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/axis_master.v|
+!i113 1
+R5
+vaxis_preload_fifo
+R0
+!i10b 1
+!s100 VhGiNBeFB]VZ3UF6Jf5S:1
+IM<I@n=iT7=9zTEA4SPUk93
+R1
+R2
+R3
+8D:/vivado/university_project-master/axis_preload_fifo.v
+FD:/vivado/university_project-master/axis_preload_fifo.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1682745555.663000
+!s107 D:/vivado/university_project-master/axis_preload_fifo.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/axis_preload_fifo.v|
+!i113 1
+R5
+vbram_control
+R0
+!i10b 1
+!s100 2Xd@8A@EdE@KSLE?6nh5E1
+IDQZCdBmKlRf8_8EReLPZO3
+R1
+R2
+R3
+8D:/vivado/university_project-master/bram_control.v
+FD:/vivado/university_project-master/bram_control.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1682745555.786000
+!s107 D:/vivado/university_project-master/bram_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/bram_control.v|
+!i113 1
+R5
+vcontrol_unit
+R0
+!i10b 1
+!s100 BkAeFImJ3e[PHNL6Ulne;3
+I`14_8OgjSoCFd[mez7fX21
+R1
+R2
+R3
+8D:/vivado/university_project-master/control_unit.v
+FD:/vivado/university_project-master/control_unit.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1682745555.910000
+!s107 D:/vivado/university_project-master/control_unit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/control_unit.v|
+!i113 1
+R5
+vdata_path
+!s110 1682745585
+!i10b 1
+!s100 NjZYb6]34=``=2^30IHGl2
+I^A0dIzg^ZPgP0Z0`NjO`[0
+R1
+R2
+R3
+8D:\vivado\university_project-master\data_path.v
+FD:\vivado\university_project-master\data_path.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1682745585.793000
+!s107 D:\vivado\university_project-master\data_path.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\vivado\university_project-master\data_path.v|
+!i113 1
+R5
+vMAC_array
+Z6 !s110 1682745556
+!i10b 1
+!s100 6:ihL;jUVe?52Y=j1nhYm0
+I410VUkPM?XVOI5IfMTI;I0
+R1
+R2
+R3
+8D:/vivado/university_project-master/MAC_array.v
+FD:/vivado/university_project-master/MAC_array.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1682745556.045000
+!s107 D:/vivado/university_project-master/MAC_array.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/MAC_array.v|
+!i113 1
+R5
+n@m@a@c_array
+vMAC_array_control
+R6
+!i10b 1
+!s100 9@^^moN`kn3doP@WZJiDi1
+IJF??<8C7<D66MbgK^HcCf1
+R1
+R2
+R3
+8D:/vivado/university_project-master/MAC_array_control.v
+FD:/vivado/university_project-master/MAC_array_control.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1682745556.210000
+!s107 D:/vivado/university_project-master/MAC_array_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/MAC_array_control.v|
+!i113 1
+R5
+n@m@a@c_array_control
+vpool_out_data_package
+R6
+!i10b 1
+!s100 19:^>SoN_T9]jWX3md`X:1
+IE7z;PG``SG8M:FAlCmPKd1
+R1
+R2
+R3
+8D:/vivado/university_project-master/pool_out_data_package.v
+FD:/vivado/university_project-master/pool_out_data_package.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1682745556.344000
+!s107 D:/vivado/university_project-master/pool_out_data_package.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/pool_out_data_package.v|
+!i113 1
+R5
+vpsum_adder
+R6
+!i10b 1
+!s100 PlXDn@57BDIV_@=bc?=UC1
+I^^W:L>2;L;k?O@VZ7KQ9>3
+R1
+R2
+R3
+8D:/vivado/university_project-master/psum_adder.v
+FD:/vivado/university_project-master/psum_adder.v
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1682745556.487000
+!s107 D:/vivado/university_project-master/psum_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/psum_adder.v|
+!i113 1
+R5
+vpsum_out_data_package
+R6
+!i10b 1
+!s100 974m=APikK9D5>azJMLmf2
+I:ad2Ho3QO_gXO<Y:KI^8H1
+R1
+R2
+R3
+8D:/vivado/university_project-master/psum_out_data_package.v
+FD:/vivado/university_project-master/psum_out_data_package.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1682745556.627000
+!s107 D:/vivado/university_project-master/psum_out_data_package.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/psum_out_data_package.v|
+!i113 1
+R5
+vtb_auto_read
+R6
+!i10b 1
+!s100 YIcM>8TD;@F8inXS`<lR82
+I9:V0YYJT=ZJAS@RWk;HQ41
+R1
+R2
+R3
+8D:/vivado/university_project-master/tb_auto_read.v
+FD:/vivado/university_project-master/tb_auto_read.v
+L0 10
+R4
+r1
+!s85 0
+31
+!s108 1682745556.856000
+!s107 D:/vivado/university_project-master/tb_auto_read.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/tb_auto_read.v|
+!i113 1
+R5
+vtb_axis_out
+Z7 !s110 1682745557
+!i10b 1
+!s100 4aA3oPO0T<mH4]jndVV:`2
+IFROG4<`olFhJl1j9X[iMK1
+R1
+R2
+R3
+8D:/vivado/university_project-master/tb_axis_out.v
+FD:/vivado/university_project-master/tb_axis_out.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1682745557.002000
+!s107 D:/vivado/university_project-master/tb_axis_out.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/tb_axis_out.v|
+!i113 1
+R5
+vtb_conv_pool
+R7
+!i10b 1
+!s100 ]A0RHg7aaomHFfd9@0OVE0
+IhWSaU:^hgLNm_A_bIazQ40
+R1
+R2
+R3
+8D:/vivado/university_project-master/tb_conv_pool.v
+FD:/vivado/university_project-master/tb_conv_pool.v
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1682745557.125000
+!s107 D:/vivado/university_project-master/tb_conv_pool.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/tb_conv_pool.v|
+!i113 1
+R5
+vtb_psum_adder
+R7
+!i10b 1
+!s100 CXNY[::DV1_RUV]Ll9g^W1
+I_=NlBA4jQI>zXhg]6QZ[h2
+R1
+R2
+R3
+8D:/vivado/university_project-master/tb_psum_adder.v
+FD:/vivado/university_project-master/tb_psum_adder.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1682745557.257000
+!s107 D:/vivado/university_project-master/tb_psum_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/tb_psum_adder.v|
+!i113 1
+R5
+vtb_top
+R7
+!i10b 1
+!s100 I?_F?bHmcl`7S2g?64;Hc0
+IMSJ`]e35lJIZY]f@oHO9F3
+R1
+R2
+R3
+8D:/vivado/university_project-master/tb_top.v
+FD:/vivado/university_project-master/tb_top.v
+L0 197
+R4
+r1
+!s85 0
+31
+!s108 1682745557.435000
+!s107 D:/vivado/university_project-master/tb_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/tb_top.v|
+!i113 1
+R5
+vtb_top_pooling
+R7
+!i10b 1
+!s100 b4KZ4l7i[M1V:G?n3^KK92
+ImA4SJ[nhaW=QmMG>g>]:;2
+R1
+R2
+R3
+8D:/vivado/university_project-master/tb_top_pooling.v
+FD:/vivado/university_project-master/tb_top_pooling.v
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1682745557.597000
+!s107 D:/vivado/university_project-master/tb_top_pooling.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/tb_top_pooling.v|
+!i113 1
+R5
+vtop
+R7
+!i10b 1
+!s100 <c<bK0fjgInLn9SViA1ef1
+IzANEoAI_954eLMlfdlTJm2
+R1
+R2
+R3
+8D:/vivado/university_project-master/top.v
+FD:/vivado/university_project-master/top.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1682745557.745000
+!s107 D:/vivado/university_project-master/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/top.v|
+!i113 1
+R5
+vweight_preload
+R0
+!i10b 1
+!s100 VNCVjHURQDS<LmV?l:3gd3
+IMW2Q[<f:]QM5:LWlfO@lS3
+R1
+R2
+R3
+8D:/vivado/university_project-master/weight_preload.v
+FD:/vivado/university_project-master/weight_preload.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1682745555.028000
+!s107 D:/vivado/university_project-master/weight_preload.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/vivado/university_project-master/weight_preload.v|
+!i113 1
+R5
